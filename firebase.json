@@ -1,0 +1,51 @@
+{
+  "hosting": {
+    "site": "joaquinfernandez-dev",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      ".firebaserc",
+      "publicar.bat",
+      "PUBLICAR.md",
+      "**/.*",
+      "**/node_modules/**",
+      "README.md",
+      "configurar-github.bat"
+    ],
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|png|webp|svg|ico)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=2592000"
+          }
+        ]
+      },
+      {
+        "source": "**/*.html",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=300"
+          }
+        ]
+      },
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "X-Content-Type-Options",
+            "value": "nosniff"
+          },
+          {
+            "key": "Referrer-Policy",
+            "value": "strict-origin-when-cross-origin"
+          }
+        ]
+      }
+    ]
+  }
+}

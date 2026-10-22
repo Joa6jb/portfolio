@@ -1,0 +1,13 @@
+# Firebase
+.firebase/
+firebase-debug.log*
+firebase-debug.*.log*
+*.log
+
+# Node
+node_modules/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini

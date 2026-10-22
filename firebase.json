@@ -11,7 +11,8 @@
       "**/node_modules/**",
       "README.md",
       "configurar-github.bat",
-      "conectar-firebase.bat"
+      "conectar-firebase.bat",
+      "subir-cambios.bat"
     ],
     "cleanUrls": true,
     "trailingSlash": false,
